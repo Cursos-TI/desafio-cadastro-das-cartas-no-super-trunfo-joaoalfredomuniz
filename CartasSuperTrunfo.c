@@ -16,7 +16,7 @@ int main() {
 
     // Pegando dados da Carta 1
     printf("Carta 1:\n");
-    printf("Qual o Estado? (ex: SP)\n");
+    printf("Qual o Estado?\n");
     scanf(" %s", estado1);
 
     printf("Qual o Código?\n");
@@ -39,7 +39,7 @@ int main() {
 
     // Pegando dados da Carta 2
     printf("\nCarta 2:\n");
-    printf("Qual o Estado? (ex: MG)\n");
+    printf("Qual o Estado?\n");
     scanf(" %s", estado2);
 
     printf("Qual o Código?\n");
@@ -61,23 +61,23 @@ int main() {
     scanf(" %d", &turisco2);
 
     // Imprimindo dados da Carta 1
-    printf("\n=== Carta 1 ===\n");
+    printf("\nCarta 1\n");
     printf("Estado: %s\n", estado1);
     printf("Código: %s\n", cod1);
     printf("Cidade: %s\n", cidade1);
     printf("População: %d\n", pop1);
-    printf("Área: %.2f km²\n", area1);
-    printf("PIB: %.2f bilhões\n", pib1);
+    printf("Área: %f km²\n", area1);
+    printf("PIB: %f bilhões\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", turisco1);
 
     // Imprimindo dados da Carta 2
-    printf("\n=== Carta 2 ===\n");
+    printf("\nCarta 2\n");
     printf("Estado: %s\n", estado2);
     printf("Código: %s\n", cod2);
     printf("Cidade: %s\n", cidade2);
     printf("População: %d\n", pop2);
-    printf("Área: %.2f km²\n", area2);
-    printf("PIB: %.2f bilhões\n", pib2);
+    printf("Área: %f km²\n", area2);
+    printf("PIB: %f bilhões\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", turisco2);
 
     return 0;
