@@ -22,8 +22,9 @@ int main() {
     printf("Qual o Código?\n");
     scanf(" %s", cod1);
 
+    //Após muita luta descobri essa solução para o projetor para de pular
     printf("Qual o Nome da Cidade?\n");
-    scanf(" %s", cidade1);
+    scanf(" %[^\n]", cidade1); 
 
     printf("Qual a População?\n");
     scanf( "%d", &pop1);
@@ -45,8 +46,9 @@ int main() {
     printf("Qual o Código?\n");
     scanf(" %s", cod2);
 
+    //Após muita luta descobri essa solução para o projetor para de pular
     printf("Qual o Nome da Cidade?\n");
-    scanf(" %s", cidade2);
+    scanf(" %[^\n]", cidade2);
 
     printf("Qual a População?\n");
     scanf(" %d", &pop2);
@@ -59,6 +61,13 @@ int main() {
 
     printf("Qual o Número de Pontos Turísticos?\n");
     scanf(" %d", &turisco2);
+    
+    //Novas Variaveis - Nível Aventureiro
+    float dp1 = pop1/area1;
+    float pc1 = (pib1*1000000000)/pop1;
+    
+    float dp2 = pop2/area2;
+    float pc2 = (pib2*1000000000)/pop2;
 
     // Imprimindo dados da Carta 1
     printf("Carta 1\n");
@@ -66,19 +75,27 @@ int main() {
     printf("Código: %s\n", cod1);
     printf("Cidade: %s\n", cidade1);
     printf("População: %d\n", pop1);
-    printf("Área: %f km²\n", area1);
-    printf("PIB: %f bilhões\n", pib1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", turisco1);
 
+    //Novas Impressões - Nível Aventureiro
+    printf("Densidade Populacional: %.2f hab/km²\n", dp1);
+    printf("PIB per Capita: %.2f de reais\n", pc1);
+
     // Imprimindo dados da Carta 2
-    printf("Carta 2\n");
+    printf("\nCarta 2\n");
     printf("Estado: %s\n", estado2);
     printf("Código: %s\n", cod2);
     printf("Cidade: %s\n", cidade2);
     printf("População: %d\n", pop2);
-    printf("Área: %f km²\n", area2);
-    printf("PIB: %f bilhões\n", pib2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", turisco2);
+
+    //Novas Impressões - Nível Aventureiro
+    printf("Densidade Populacional: %.2f hab/km²\n", dp2);
+    printf("PIB per Capita: %.2f de reais\n", pc2);
 
     return 0;
 }
