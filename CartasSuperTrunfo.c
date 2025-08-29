@@ -69,6 +69,11 @@ int main() {
     float dp2 = pop2/area2;
     float pc2 = (pib2*1000000000)/pop2;
 
+    //Super Poder - Nível Mestre
+    double super1 = pop1 + area1 + pib1 + tur1 + pc1 + (1/dp1);
+    double super2 = pop2 + area2 + pib2 + tur2 + pc2 + (1/dp2);
+
+
     // Imprimindo dados da Carta 1
     printf("Carta 1\n");
     printf("Estado: %s\n", estado1);
@@ -78,14 +83,11 @@ int main() {
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", tur1);
-
+    
     //Novas Impressões - Nível Aventureiro
     printf("Densidade Populacional: %.2f hab/km²\n", dp1);
     printf("PIB per Capita: %.2f de reais\n", pc1);
-
-    //Super Poder - Nível Mestre
-    double super1 = pop1 + area1 + pib1 + tur1 + pc1 + (1/dp1);
-    double super2 = pop2 + area2 + pib2 + tur2 + pc2 + (1/dp2);
+    printf("Super Poder: %.2lf\n", super1);
 
     // Imprimindo dados da Carta 2
     printf("\nCarta 2\n");
@@ -95,11 +97,13 @@ int main() {
     printf("População: %d\n", pop2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
-    printf("Número de Pontos Turísticos: %d\n", tur2);
+    printf("Número de Pontos Turísticos: %d\n", tur2);   
 
     //Novas Impressões - Nível Aventureiro
     printf("Densidade Populacional: %.2f hab/km²\n", dp2);
     printf("PIB per Capita: %.2f de reais\n", pc2);
+    printf("Super Poder: %.2lf\n", super2); 
+
 
     //Comparação das Cartas
     printf("\nComparação de Cartas\n");
